@@ -2,7 +2,7 @@
 
 function applyPickupView() {
     // プロフィールのページ以外を対象としない
-    const nav = document.querySelector("[aria-label='Profile timelines']");
+    const nav = document.querySelector("[role='navigation']");
     if (!nav) {
         return;
     }
@@ -24,7 +24,7 @@ function applyPickupView() {
     if (contents.length === 0) {
         return;
     }
-    const whoToFollow = sidebar.querySelector("[aria-label='Who to follow']");
+    const whoToFollow = sidebar.querySelector("[role='complementary']");
     if (!whoToFollow) {
         return;
     }
