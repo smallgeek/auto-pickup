@@ -2,7 +2,7 @@
 
 function applyPickupView() {
     // プロフィールのページ以外を対象としない
-    const nav = document.querySelector("[role='navigation']");
+    const nav = document.querySelector("[data-testid='UserProfileHeader_Items']");
     if (!nav) {
         return;
     }
