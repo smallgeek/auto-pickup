@@ -42,13 +42,13 @@ function applyPickupView() {
  */
 function buildViewHtml() {
 
-    return `<aside aria-label="人気のメディア" role="complementary" class="css-1dbjc4n">
+    return `<aside aria-label="いいねTOP3" role="complementary" class="css-1dbjc4n">
     <div class="css-1dbjc4n r-my5ep6 r-rull8r r-qklmqi r-1wtj0ep r-1j3t67a r-1w50u8q">
         <h2 aria-level="2" role="heading" class="css-4rbku5 css-1dbjc4n r-1awozwy r-18u37iz r-1wtj0ep">
             <div dir="auto"
                 class="css-901oao css-cens5h r-hkyrab r-1tl8opc r-1b6yd1w r-1vr29t4 r-ad9z0x r-bcqeeo r-qvutc0"
                 style="-webkit-line-clamp: 3;"><span
-                    class="css-901oao css-16my406 r-1tl8opc r-ad9z0x r-bcqeeo r-qvutc0">人気のメディア</span></div>
+                    class="css-901oao css-16my406 r-1tl8opc r-ad9z0x r-bcqeeo r-qvutc0">いいねTOP3</span></div>
         </h2>
     </div>
     <!-- 繰り返し部分 -->
