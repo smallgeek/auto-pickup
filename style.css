@@ -1,0 +1,23 @@
+.top3-tweet {
+    display: grid;
+    grid-template-areas: 
+        "image text text"
+        "image like retweet";
+    grid-template-columns: 140px 1fr 1fr;
+}
+
+.top3-tweet-image {
+    grid-area: image;
+}
+
+.top3-tweet-text {
+    grid-area: text;
+}
+
+.top3-tweet-like {
+    grid-area: like;
+}
+
+.top3-tweet-retweet {
+    grid-area: retweet;
+}

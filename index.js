@@ -56,10 +56,13 @@ function buildViewHtml() {
         <div role="button" data-focusable="true" tabindex="0"
             class="css-18t94o4 css-1dbjc4n r-my5ep6 r-rull8r r-qklmqi r-1ny4l3l r-1j3t67a r-1w50u8q r-o7ynqc r-6416eg"
             data-testid="PopularCell">
-            <div class="r-18u37iz">
+            <div class="r-18u37iz top3-tweet">
                 <!-- -->
-                <img alt="画像" draggable="true" src="https://pbs.twimg.com/media/DA1aNLzUIAA7JG-?format=jpg&amp;name=120x120" style="float: left;">
-                <div aria-haspopup="true" aria-label="4 リツイート. Retweet" role="button" data-focusable="true" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1777fci r-11cpok1 r-1ny4l3l r-bztko3 r-lrvibr" data-testid="retweet">
+                <img class="top3-tweet-image" alt="画像" draggable="true" src="https://pbs.twimg.com/media/DA1aNLzUIAA7JG-?format=jpg&amp;name=120x120" style="float: left;">
+                <div class="top3-tweet-text">
+                    岐阜はラムダに似ている
+                </div>
+                <div aria-haspopup="true" aria-label="4 リツイート. Retweet" role="button" data-focusable="true" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1777fci r-11cpok1 r-1ny4l3l r-bztko3 r-lrvibr top3-tweet-retweet" data-testid="retweet">
                     <div dir="ltr" class="css-901oao r-1awozwy r-1re7ezh r-6koalj r-1qd0xha r-a023e6 r-16dba41 r-1h0z5md r-ad9z0x r-bcqeeo r-o7ynqc r-clp7b1 r-3s2u2q r-qvutc0">
                         <div class="css-1dbjc4n r-xoduu5">
                             <div class="css-1dbjc4n r-1niwhzg r-sdzlij r-1p0dtai r-xoduu5 r-1d2f490 r-xf4iuw r-u8s1d r-zchlnj r-ipm5af r-o7ynqc r-6416eg">
@@ -78,7 +81,7 @@ function buildViewHtml() {
                         </div>
                     </div>
                 </div>
-                <div aria-label="13 いいねの数. Like" role="button" data-focusable="true" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1777fci r-11cpok1 r-1ny4l3l r-bztko3 r-lrvibr" data-testid="like">
+                <div aria-label="13 いいねの数. Like" role="button" data-focusable="true" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1777fci r-11cpok1 r-1ny4l3l r-bztko3 r-lrvibr top3-tweet-like" data-testid="like">
                     <div dir="ltr" class="css-901oao r-1awozwy r-1re7ezh r-6koalj r-1qd0xha r-a023e6 r-16dba41 r-1h0z5md r-ad9z0x r-bcqeeo r-o7ynqc r-clp7b1 r-3s2u2q r-qvutc0">
                         <div class="css-1dbjc4n r-xoduu5"><div class="css-1dbjc4n r-1niwhzg r-sdzlij r-1p0dtai r-xoduu5 r-1d2f490 r-xf4iuw r-u8s1d r-zchlnj r-ipm5af r-o7ynqc r-6416eg">
                         </div>
