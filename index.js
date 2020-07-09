@@ -28,19 +28,47 @@ function applyPickupView() {
     if (!whoToFollow) {
         return;
     }
-    
-    // 仮の画像を挿入
+
     const div = document.createElement("div");
     div.id = 'test-tag';
-    div.className = "css-1dbjc4n r-1u4rsef r-9cbz99 r-t23y2h r-1phboty r-ku1wi2 r-1udh08x";
-    div.innerHTML = buildViewHtml();
     contents[0].insertBefore(div, whoToFollow.parentElement);
+
+    // URLからユーザーIDを取得
+    const fields = document.URL.split('/');
+    const uid = fields[fields.length - 1];
+
+    getTop3Tweet(uid, html => {
+        div.className = "css-1dbjc4n r-1u4rsef r-9cbz99 r-t23y2h r-1phboty r-ku1wi2 r-1udh08x";
+        div.innerHTML = buildViewHtml(html);
+    });
+}
+
+/**
+ * 指定ユーザーのTOP3ツイートを取得する
+ * @param {string} uid 
+ * @param {*} success 
+ */
+function getTop3Tweet(uid, success) {
+    const url = `https://twitter.com/search?f=live&q=pic%20(from%3A${uid})%20min_faves%3A1&src=typed_query`;
+
+    //TODO: fetch API
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = "document";
+
+    xhr.onload = function() {
+        if (xhr.readyState === 4 /* XMLHttpRequest.DONE */ && xhr.status === 200) {
+            success(xhr.response);
+        }
+    };
+    xhr.open("GET", url, true);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.send();
 }
 
 /**
  * メディア表示欄のマークアップを構築する
  */
-function buildViewHtml() {
+function buildViewHtml(html) {
 
     const results = [
         {
