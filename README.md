@@ -1,2 +1,2 @@
-# auto-pickup
-Google Chrome Extensions that append pickup tweet to Twitter profile
+# top3-tweet
+#自分のTwitterいいねTOP3をあげる を見つけやすくする Google Chrome 拡張
