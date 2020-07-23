@@ -48,7 +48,7 @@ function applyPickupView() {
  * @param {string} uid 
  * @param {*} success 
  */
-function getTop3Tweet(uid, success) {
+function getTop3Tweet(uid: string, success: (response: string) => void) {
     const url = `https://twitter.com/search?f=live&q=pic%20(from%3A${uid})%20min_faves%3A1&src=typed_query`;
 
     //TODO: fetch API
@@ -68,7 +68,7 @@ function getTop3Tweet(uid, success) {
 /**
  * メディア表示欄のマークアップを構築する
  */
-function buildViewHtml(html) {
+function buildViewHtml(html: string) {
 
     const results = [
         {
