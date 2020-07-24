@@ -1,5 +1,5 @@
 {
-  "name": "Auto Pickup",
+  "name": "Top3 Tweet",
   "manifest_version": 2,
   "version": "1.0",
   "permissions": [
@@ -7,7 +7,7 @@
   ],
   "browser_action": {
     "default_icon": "128.png",
-    "default_title": "Auto Pickup"
+    "default_title": "Top3 Tweet"
   },
   "content_scripts": [
     {
